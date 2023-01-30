@@ -1,0 +1,10 @@
+create general shape of screen in html and css
+
+have a button that allows the change of the size of the grid LxW with a slider. 
+    if you choose 5x5 it will run a for loop to create a 5 squares per each of 5 columns
+
+set up hover function so that if you hover over a square it changes color permanantly
+    on hover set background to COLOR and change ID from Unmarked to Marked so it cant be changed again unless the screen is reset
+
+set up additional option that allows for the choice of color change and also a random color per square function.
+    if color is selected set another id to that color and change the box to that id

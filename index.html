@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETCH-A-SKETCH</title>
-    <link rel="stylesheets" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <div class="main">
+        <div class="inputs">
+            <div class="slider">
+                <output id="value">16</output>
+                <input type="range" value="24" min="1" max="100" oninput="this.previousElementSibling.value = this.value">
+            </div>
+            
+            <input type="button" onclick="makeGrid(document.getElementById('value').innerText)" value="Set Grid Size">
+            <input type="button" onclick="document.location.reload()" value="Reset">
+        </div> 
+
+        <div id="screen" class="container">
+        </div>
+    </div>
 </body>
 </html>
